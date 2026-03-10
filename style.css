@@ -1,0 +1,1562 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("font/lato/Lato-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "lato";
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1489px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col {
+  padding: 0 15px;
+}
+.col-20 {
+  max-width: 20%;
+  flex: 0 0 20%;
+  padding: 0 15px;
+}
+.col-33 {
+  max-width: 33.33%;
+  flex: 0 0 33.33%;
+  padding: 0 15px;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "lato";
+  font-weight: 600;
+  color: #02132f;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 37px;
+  color: #ffffff;
+  font-family: "lato";
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 26px;
+  color: #ffffff;
+  font-family: "lato";
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* ================Navbar============  */
+.header {
+  background: #082a57;
+  padding: 18px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 163px;
+  display: block;
+}
+
+.navbar-links {
+  margin-left: auto;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+}
+
+.navlinks li {
+  margin-left: 55px;
+}
+
+.navlinks a {
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.navlinks a:hover {
+  color: #30a8de;
+}
+
+/* Button */
+
+.headerbtn {
+  margin-left: 35px;
+}
+
+.cmn-btn {
+  display: inline-block;
+  background: #30a8de;
+  color: #ffffff;
+  padding: 18px 37px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: 0.4s ease;
+}
+
+.cmn-btn:hover {
+  background: #0c3d91;
+  transform: translateY(-3px);
+}
+
+/* ====================Banner Section============ */
+
+.banner {
+  background:
+    linear-gradient(
+      to right,
+      rgba(145, 208, 253, 0.56) 40%,
+      rgba(255, 255, 255, 0) 65%
+    ),
+    url("images/bg-img.png");
+  min-height: 900px;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+.welcome {
+  font-family: "Lato";
+  font-size: 27px;
+  font-weight: 400;
+  color: #02132f;
+  max-width: 386px;
+  width: 100%;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.health {
+  font-size: 47px;
+  color: #02132f;
+  font-weight: 400;
+  letter-spacing: 2;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 17px 38px;
+  border-radius: 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.btn-primary {
+  margin-top: 32px;
+  background: #4db7e5;
+  color: #ffffff;
+  transition: 0.4s ease;
+}
+
+.btn-primary:hover:hover {
+  background: #0c3d91;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  margin-top: 32px;
+  margin-left: 15px;
+  border: 2px solid #0b2545;
+  color: #0b2545;
+  transition: 0.4s;
+}
+
+.btn-outline:hover {
+  background: #0b2545;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/*============= About Section =============*/
+
+.about-section {
+  background: url("images/about.png");
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-content {
+  max-width: 662px;
+}
+
+.small-title {
+  font-size: 26px;
+  letter-spacing: 5px;
+  margin-bottom: 42px;
+  color: #02132f;
+  text-transform: uppercase;
+  max-width: 786px;
+}
+
+.about-card {
+  background: #0b2f5b;
+  width: 662px;
+  height: 560px;
+  padding: 60px;
+  border-radius: 25px;
+  color: white;
+}
+
+.about-card span {
+  font-size: 26px;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+
+.about-card h2 {
+  font-size: 37px;
+  margin: 10px 0 20px;
+}
+
+.about-card p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.read-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 37px;
+  background: #30a8de;
+  color: #ffffff;
+  border-radius: 40px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.read-btn:hover {
+  background: #1a62dd;
+  transform: translateY(-3px);
+}
+
+/* =====================Service Section================= */
+.service-section {
+  background: #072a54;
+  padding: 100px 0;
+  color: white;
+}
+
+.service-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  width: 467px;
+  height: 323px;
+  padding: 35px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2863ca, #0744ae);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  max-width: 52px;
+  margin-bottom: 23px;
+}
+
+.card h3 {
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.card a:hover {
+  color: #03397a;
+}
+
+.service-content {
+  max-width: 993px;
+}
+
+.service-content h3 {
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  color: #cdd6e4;
+}
+
+.service-content h2 {
+  margin-bottom: 20px;
+}
+
+.service-content p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #cbd3df;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn-book {
+  padding: 18px 41px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-book:hover {
+  background: #ffffff;
+  color: #072a54;
+  transform: translateY(-3px);
+}
+
+/* =================Testimonial Section============== */
+
+.testimonial {
+  background: #f4f6f9;
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h3 {
+  letter-spacing: 4px;
+  color: #02132f;
+  margin-bottom: 15px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  letter-spacing: 4px;
+  margin-bottom: 35px;
+  color: #02132f;
+}
+
+.section-title p {
+  max-width: 1105px;
+  margin: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #02132f;
+  line-height: 1.6;
+}
+
+.review-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.star {
+  color: #ffb400;
+  margin-bottom: 15px;
+}
+
+.star i {
+  margin-right: 4px;
+}
+
+.review-box p {
+  color: #5f6c7b;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 350px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* photo name */
+
+.photo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.photo-name figure {
+  width: 35px;
+  height: 35px;
+}
+
+.photo-name img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.photo-name p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* quotation */
+
+.cottation {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  opacity: 0.25;
+}
+
+.cottation img {
+  width: 80px;
+}
+
+/* buttons */
+
+.testimonial-btns {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.btn-leave {
+  display: inline-block;
+  background: #2f8ec9;
+  color: #ffffff;
+  padding: 18px 37px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: 0.4s;
+}
+
+.btn-leave:hover {
+  background: #0c3d91;
+  transform: translateY(-3px);
+}
+
+.btn-view {
+  display: inline-block;
+  border: 1px solid #2f3e5c;
+  padding: 18px 37px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #2f3e5c;
+  transition: 0.4s;
+}
+
+.btn-view:hover {
+  background: #0c3d91;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* =================Booking Section============== */
+.appointment {
+  padding: 80px 0;
+}
+
+.appointment .container {
+  position: relative;
+  background: url("images/booking.png");
+  background-size: cover;
+  background-position: left center;
+  border-radius: 40px;
+  padding: 80px 60px;
+  overflow: hidden;
+}
+
+/* Text Content */
+
+.appointment-content h2 {
+  color: #ffffff;
+  max-width: 775px;
+  margin-left: 560px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.btn-book {
+  display: inline-block;
+  margin-left: 560px;
+  padding: 14px 35px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn-book:hover {
+  background: #ffffff;
+  color: #3f92c5;
+}
+
+/* Circle Shape */
+.circle {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+}
+
+.circle img {
+  width: 170px;
+}
+
+/* ===================Footer Section=============== */
+
+.footer {
+  background-color: #001a3d;
+  color: #ffffff;
+  padding: 60px 0 30px;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-logo + ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-logo + ul li {
+  margin-right: 15px;
+}
+
+.footer-logo + ul li a {
+  color: #ffffff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-logo + ul li a:hover {
+  opacity: 0.7;
+}
+
+/* Heading Style */
+.footer-heading {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Links and List Style */
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li {
+  margin-bottom: 12px;
+}
+
+.links ul li a {
+  color: #cbd5e0;
+  /* Slightly grey color for links */
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  line-height: 1.5;
+  display: block;
+}
+
+.links ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+  /* Hover effect */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-bottom hr {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  margin: auto;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: #a0aec0;
+}
+.footer-bottom {
+  flex: 0 0 100%; /* Puru width nibe */
+  max-width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 15px;
+}
+
+.footer-bottom hr {
+  border: 0;
+  border-top: 1px solid #ffffff;
+  margin-bottom: 25px;
+}
+.footer-bottom a {
+  color: #ffffff;
+}
+.footer-bottom a:hover {
+  color: #68acff;
+}
+.footer-bottom p {
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* ================= 1199px Responsive ================= */
+
+@media (max-width: 1199px) {
+  /* container */
+  .container {
+    max-width: 1199px;
+  }
+
+  /* ================= Navbar ================= */
+
+  .navlinks li {
+    margin-left: 30px;
+  }
+
+  .cmn-btn {
+    padding: 14px 25px;
+    font-size: 14px;
+  }
+
+  /* ================= Banner ================= */
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .health {
+    font-size: 36px;
+  }
+
+  .banner {
+    min-height: 700px;
+  }
+
+  /* ================= About Section ================= */
+
+  .about-card {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+  }
+
+  .about-content {
+    max-width: 600px;
+  }
+
+  .small-title {
+    font-size: 20px;
+  }
+
+  /* ================= Service Section ================= */
+
+  .service-wrapper {
+    gap: 40px;
+  }
+
+  .card {
+    width: 380px;
+    height: auto;
+  }
+
+  /* ================= Testimonial ================= */
+
+  .review-box p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  /* ================= Appointment ================= */
+
+  .appointment-content h2 {
+    margin-left: 0;
+    max-width: 600px;
+  }
+
+  .appointment .btn-book {
+    margin-left: 0;
+  }
+
+  /* ================= Footer ================= */
+
+  .col-20 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+  }
+}
+
+/* ================== 1024px Responsive ================== */
+
+@media (max-width: 1024px) {
+  /* container */
+  .container {
+    max-width: 960px;
+  }
+
+  /* ===== Navbar ===== */
+
+  .navlinks li {
+    margin-left: 25px;
+  }
+
+  .cmn-btn {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+
+  /* ===== Banner ===== */
+
+  .banner {
+    min-height: 700px;
+  }
+
+  h1 {
+    font-size: 58px;
+  }
+
+  .health {
+    font-size: 34px;
+  }
+
+  .welcome {
+    font-size: 22px;
+    letter-spacing: 10px;
+  }
+
+  /* ===== About ===== */
+
+  .about-wrapper {
+    justify-content: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-card {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+  }
+
+  /* ===== Service Section ===== */
+
+  .service-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .service-cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    width: 420px;
+    height: auto;
+  }
+
+  /* ===== Testimonial ===== */
+
+  .col-33 {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-bottom: 30px;
+  }
+
+  /* ===== Appointment ===== */
+
+  .appointment-content h2 {
+    margin-left: 0;
+    max-width: 600px;
+  }
+
+  .appointment .btn-book {
+    margin-left: 0;
+  }
+
+  /* ===== Footer ===== */
+
+  .col-20 {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+    margin-bottom: 30px;
+  }
+}
+
+/* =============================
+991px Responsive
+============================= */
+
+@media (max-width: 991px) {
+  /* container */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* navbar */
+  .navlinks {
+    display: none;
+  }
+
+  .navlinks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navlinks li {
+    margin: 10px 15px;
+  }
+
+  .headerbtn {
+    margin-left: 0;
+  }
+
+  /* banner */
+
+  .banner {
+    min-height: 600px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .health {
+    font-size: 30px;
+  }
+
+  .welcome {
+    letter-spacing: 10px;
+  }
+
+  /* about section */
+
+  .about-wrapper {
+    justify-content: center;
+  }
+
+  .about-card {
+    width: 100%;
+    height: auto;
+  }
+
+  /* service section */
+
+  .service-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .service-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* testimonial */
+
+  .col-33 {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-bottom: 30px;
+  }
+
+  /* appointment */
+
+  .appointment-content h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .appointment .btn-book {
+    margin-left: 0;
+    display: block;
+    width: max-content;
+    margin: auto;
+  }
+
+  /* footer */
+
+  .col-20 {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-bottom: 30px;
+  }
+}
+
+/* =========================
+768px Responsive
+========================= */
+
+@media (max-width: 768px) {
+  /* navbar */
+
+  /* .navbar {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  } */
+
+  /* .navbar-links {
+    margin-left: 0;
+  } */
+
+  .navlinks {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navlinks li {
+    margin-left: 0;
+  }
+
+  .headerbtn {
+    margin-left: 0;
+  }
+
+  /* banner */
+
+  .banner {
+    min-height: 500px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .health {
+    font-size: 25px;
+  }
+
+  .welcome {
+    letter-spacing: 8px;
+    font-size: 20px;
+  }
+
+  .banner-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* about */
+
+  .about-wrapper {
+    justify-content: center;
+  }
+
+  .small-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .about-card {
+    width: 100%;
+    height: auto;
+    padding: 40px 25px;
+  }
+
+  /* service */
+
+  .service-wrapper {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  /* testimonial */
+
+  .col-33 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+
+  .review-box p {
+    max-width: 100%;
+  }
+
+  /* appointment */
+
+  .appointment .container {
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .appointment-content h2 {
+    margin-left: 0;
+    font-size: 26px;
+  }
+
+  .appointment .btn-book {
+    margin-left: 0;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  /* footer */
+
+  .col-20 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer-logo + ul {
+    justify-content: center;
+  }
+}
+
+/* =========================
+576px Responsive (Mobile)
+========================= */
+
+@media (max-width: 576px) {
+  /* container */
+
+  .container {
+    padding: 0 15px;
+  }
+
+  /* ===== Navbar ===== */
+
+  /* .navbar {
+    flex-direction: column;
+    gap: 15px;
+  } */
+
+  .logo {
+    max-width: 130px;
+  }
+
+  .headerbtn .cmn-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  /* ===== Banner ===== */
+
+  .banner {
+    min-height: 420px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .health {
+    font-size: 20px;
+  }
+
+  .welcome {
+    font-size: 16px;
+    letter-spacing: 6px;
+  }
+
+  .banner-btn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+
+  /* ===== About ===== */
+
+  .small-title {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .about-card {
+    padding: 30px 20px;
+  }
+
+  .about-card h2 {
+    font-size: 26px;
+  }
+
+  .about-card p {
+    font-size: 15px;
+  }
+
+  /* ===== Service ===== */
+
+  .service-section {
+    padding: 70px 0;
+  }
+
+  .service-content h2 {
+    font-size: 26px;
+  }
+
+  .service-content p {
+    font-size: 15px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  /* ===== Testimonial ===== */
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  .section-title p {
+    font-size: 15px;
+  }
+
+  .review-box {
+    padding: 18px;
+  }
+
+  .review-box p {
+    font-size: 15px;
+  }
+
+  .testimonial-btns a {
+    display: block;
+    margin: 10px auto;
+    width: max-content;
+  }
+
+  /* ===== Appointment ===== */
+
+  .appointment .container {
+    padding: 40px 20px;
+    border-radius: 25px;
+  }
+
+  .appointment-content h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .circle img {
+    width: 120px;
+  }
+
+  /* ===== Footer ===== */
+
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-logo img {
+    max-width: 120px;
+  }
+
+  .footer-heading {
+    font-size: 14px;
+  }
+
+  .links ul li a {
+    font-size: 13px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}
+
+/* =========================
+480px Responsive
+========================= */
+
+@media (max-width: 480px) {
+  /* ===== Banner ===== */
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .health {
+    font-size: 18px;
+  }
+
+  .welcome {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  .banner {
+    min-height: 380px;
+  }
+
+  .btn {
+    padding: 12px 22px;
+    font-size: 13px;
+  }
+
+  /* ===== About Section ===== */
+
+  .about-card {
+    padding: 25px 18px;
+  }
+
+  .about-card h2 {
+    font-size: 22px;
+  }
+
+  .about-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .small-title {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  /* ===== Service Section ===== */
+
+  .service-section {
+    padding: 60px 0;
+  }
+
+  .card {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .service-content h2 {
+    font-size: 22px;
+  }
+
+  /* ===== Testimonial ===== */
+
+  .section-title h2 {
+    font-size: 22px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .review-box {
+    padding: 15px;
+  }
+
+  .review-box p {
+    font-size: 14px;
+  }
+
+  /* ===== Appointment ===== */
+
+  .appointment .container {
+    padding: 35px 15px;
+  }
+
+  .appointment-content h2 {
+    font-size: 18px;
+  }
+
+  .circle {
+    top: -40px;
+    right: -40px;
+  }
+
+  .circle img {
+    width: 90px;
+  }
+
+  /* ===== Footer ===== */
+
+  .footer {
+    padding: 35px 0 15px;
+  }
+
+  .footer-heading {
+    font-size: 13px;
+  }
+
+  .links ul li a {
+    font-size: 12px;
+  }
+
+  .footer-bottom p {
+    font-size: 11px;
+  }
+}
+
+/* =========================
+375px Responsive
+========================= */
+
+@media (max-width: 375px) {
+  /* ===== Navbar ===== */
+  .headerbtn {
+    padding: 16px 28px;
+  }
+
+  .logo {
+    max-width: 110px;
+  }
+
+  .headerbtn .cmn-btn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  /* ===== Banner ===== */
+
+  .banner {
+    min-height: 350px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .health {
+    font-size: 16px;
+  }
+
+  .welcome {
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+
+  .banner-btn {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  /* ===== About ===== */
+
+  .small-title {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .about-card {
+    padding: 20px 15px;
+  }
+
+  .about-card h2 {
+    font-size: 20px;
+  }
+
+  .about-card p {
+    font-size: 13px;
+  }
+
+  /* ===== Service ===== */
+
+  .service-section {
+    padding: 50px 0;
+  }
+
+  .card {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .service-content h2 {
+    font-size: 20px;
+  }
+
+  .service-content p {
+    font-size: 13px;
+  }
+
+  /* ===== Testimonial ===== */
+
+  .section-title h2 {
+    font-size: 20px;
+  }
+
+  .section-title p {
+    font-size: 13px;
+  }
+
+  .review-box {
+    padding: 14px;
+  }
+
+  .review-box p {
+    font-size: 13px;
+  }
+
+  /* ===== Appointment ===== */
+
+  .appointment .container {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .appointment-content h2 {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .appointment .btn-book {
+    margin-left: 0;
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .circle {
+    top: -30px;
+    right: -30px;
+  }
+
+  .circle img {
+    width: 70px;
+  }
+
+  /* ===== Footer ===== */
+
+  .footer {
+    padding: 30px 0 15px;
+  }
+
+  .footer-logo img {
+    max-width: 100px;
+  }
+
+  .footer-heading {
+    font-size: 12px;
+  }
+
+  .links ul li a {
+    font-size: 11px;
+  }
+
+  .footer-bottom p {
+    font-size: 10px;
+  }
+}
